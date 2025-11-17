@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./styles/img/dailyTasks.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Daily Task</title>
+</head>
+<body>
+    <h1>Daily Task</h1>
+    <div class="main-columns">
+        <div class="col-form">                    
+            <div class="container-form">
+                <h2>Agregar Tarea</h2>
+                <label for="" class="label-form">Titulo</label>
+                <input type="text" id="titleTask" class="input-form" placeholder="Digita el titulo de la tarea">
+                <label for="" class="label-form">Descripcion</label>
+                <input type="text" id="desTask" class="input-form" placeholder="Digita la descripcion de la tarea">
+                <label for="" class="label-form">Categoria</label>
+                <select id="selCategory" class="select-form">
+                    <option>Seleccione la categoria</option>
+                    <option value="Staff" id="staff" class="option-form">Personal</option>
+                    <option value="Work" id="work" class="option-form">Trabajo</option>
+                    <option value="Study" id="study" class="option-form">Estudio</option>
+                    <option value="Urgent" id="urgent" class="option-form">Urgente</option>
+                </select>
+                <button class="btn-add" id="btn-add">Agregar</button>
+            </div>
+        </div>
+        <div class="col-earring">  
+            <div class="container-earring">
+                <h2>Tareas Pendientes</h2>
+                <div class="container-staff">
+                    <h3>Tareas Personales</h3>
+                    <ul class="list-staff" id="list-staffEarring">
+                    </ul>
+                </div>
+                <div class="container-work">
+                    <h3>Tareas Trabajo</h3>
+                    <ul class="list-work" id="list-workEarring">
+                    </ul>
+                </div>
+                <div class="container-study">
+                    <h3>Tareas Estudio</h3>
+                    <ul class="list-study" id="list-studyEarring">
+                    </ul>
+                </div>
+                <div class="container-urgent">
+                    <h3>Tareas Urgentes</h3>
+                    <ul class="list-urgent" id="list-urgentEarring">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-filled">
+            <div class="container-filled">
+                <h2>Tarea completadas</h2>
+                <div class="container-staff">
+                    <h3>Tareas Personales</h3>
+                    <ul class="list-staff" id="list-staffFilled">
+                    </ul>
+                </div>
+                <div class="container-work">
+                    <h3>Tareas Trabajo</h3>
+                    <ul class="list-work" id="list-workFilled">
+                    </ul>
+                </div>
+                <div class="container-study">
+                    <h3>Tareas Estudio</h3>
+                    <ul class="list-study" id="list-studyFilled">
+                    </ul>
+                </div>
+                <div class="container-urgent">
+                    <h3>Tareas Urgentes</h3>
+                    <ul class="list-urgent" id="list-urgentFilled">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="code/index.js"></script>
+</body>
+</html>
